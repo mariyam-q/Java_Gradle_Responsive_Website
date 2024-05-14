@@ -4,4 +4,4 @@ Project is divided into 8 phases, [here]((https://github.com/Krishnamohan-Yerrab
 
 ## ❤ Show your support
 
-Give a ⭐️ if this project helped you, Happy learning!
+Work Hard 
