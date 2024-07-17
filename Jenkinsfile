@@ -55,9 +55,9 @@ pipeline {
                 script {
                     withCredentials([string(credentialsId: 'docker_pass', variable: 'docker_password')]) {
                         sh '''
-                        docker build -t 172.31.57.248:8083/gradle1:latest .
-                        docker login -u admin -p $docker_password 172.31.57.248:8083
-                        docker push 172.31.57.248:8083/gradle1:latest
+                        docker build -t 20.70.136.109:8083/gradle1:latest .
+                        docker login -u admin -p $docker_password 20.70.136.109:8083
+                        docker push 20.70.136.109:8083/gradle1:latest
                         '''
                     }
                 }
@@ -67,11 +67,10 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'docker_pass', variable: 'docker_password')]) {
-                        sh 'docker run -d --name g1 -p 8082:8080 100.25.14.68:8083/gradle1:latest'
+                        sh 'docker run -d --name g1 -p 8082:8080 20.70.136.109:8083/gradle1:latest'
                     }
                 }
             }
         }
     }
 }
-
