@@ -30,7 +30,7 @@ test {
 
 sonarqube {
     properties {
-       	property 'sonar.host.url', 'http://34.229.130.178/:9000/'
-        property 'sonar.login', 'squ_1ad7c4d75c2c5470850f82f42bebb26bb6f4f1bc'
+       	property 'sonar.host.url', 'http://44.201.173.148/:9000/'
+        property 'sonar.login', 'squ_e98bde737ef7252c96b7c5b33016d30a8033cbba'
     }
 }
